@@ -24,7 +24,7 @@ stage('Build Docker Imager'){
    sh 'docker push sindhu2506/myweb:0.0.2'
    }
    stage('Nexus Image Push'){
-   sh "docker login -u admin -p admin123 13.234.19.82:8083"
+   sh "docker login -u admin -p admin123 13.127.68.5:8083"
    sh "docker tag sindhu2506/myweb:0.0.2 13.127.68.5:8083/damo:1.0.0"
    sh 'docker push 13.127.68.5:8083/damo:1.0.0'
    }
