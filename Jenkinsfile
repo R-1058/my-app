@@ -39,3 +39,4 @@ stage('Docker deployment'){
    }
 }
 }
+echo "hello"
